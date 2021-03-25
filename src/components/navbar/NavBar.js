@@ -1,9 +1,18 @@
 import React from 'react'
-import { createUseStyles, ThemeProvider, useTheme } from "react-jss";
+
 
 
 
 function NavBar() {
+
+
+    
+
+    return(
+        <div>
+            hello from the navbar
+        </div>
+    )
 
 }
 export default NavBar
