@@ -1,5 +1,6 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
+import styles from './style'
 
 
 
