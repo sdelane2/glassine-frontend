@@ -24,9 +24,7 @@ const navbar = (props) => (
 );
 
 function NavBar() {
-
-    
-
+  
     return(
         <div>
             {navbar()}
