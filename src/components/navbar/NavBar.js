@@ -1,45 +1,35 @@
 import React from 'react'
-import {createUseStyles} from 'react-jss'
-import styles from './style'
 
 
-
+const navbar = (props) => (
+  <header class="main-header">
+  <div>
+      <a href="index.html" class="main-header__brand">glassine</a>
+  </div>
+  <nav class="main-nav">
+      <ul class="main-nav__items">
+          <li class="main-nav__item">
+              <a href="packages/index.html">Services</a>
+          </li>
+          <li class="main-nav__item">
+              <a href="customers/index.html">Log in</a>
+          </li>
+          <li class="main-nav__item main-nav__item--cta">
+              <a href="start-hosting/index.html">Become a Handler</a>
+          </li>
+      </ul>
+  </nav>
+</header>
+  
+);
 
 function NavBar() {
 
-    const useStyles = createUseStyles({
-        myButton: {
-          color: 'green',
-          margin: {
-            // jss-plugin-expand gives more readable syntax
-            top: 5, // jss-plugin-default-unit makes this 5px
-            right: 0,
-            bottom: 0,
-            left: '1rem'
-          },
-          '& span': {
-            // jss-plugin-nested applies this to a child span
-            fontWeight: 'bold' // jss-plugin-camel-case turns this into 'font-weight'
-          }
-        },
-        myLabel: {
-          fontStyle: 'italic'
-        }
-      })
-
-      const Button = ({children}) => {
-        const classes = useStyles()
-        return (
-          <button className={classes.myButton}>
-            <span className={classes.myLabel}>{children}</span>
-          </button>
-        )
-      }
     
 
     return(
         <div>
-            <Button>submit</Button>
+            {navbar()}
         </div>
     )
 
