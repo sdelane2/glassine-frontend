@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+
 .main-header {
     width: 100%;
     padding: 8px 16px;
@@ -10,10 +13,12 @@
 .main-header > div {
     display: inline-block;
     vertical-align: middle;
+    padding: 10px 0 10px 0
 }
 
 .main-header__brand {
-    color: blue;
+    font-family: 'Comfortaa', cursive;
+    color: #4682B4;
     text-decoration: none;
     font-weight: bold;
     font-size: 22px;
@@ -33,13 +38,14 @@
     padding: 0;
 }
 .main-nav__item {
+    font-family: 'Comfortaa', cursive;
     display: inline-block;
     margin: 0 16px;
 }
 
 .main-nav__item a {
     text-decoration: none;
-    color: blue;
+    color: #4682B4;
     font-weight: bold;
     padding: 3px 0;
 
@@ -47,26 +53,27 @@
 
 .main-nav__item a:hover,
 .main-nav__item a:active {
-    color: blue;
-    border-bottom: 5px solid blue
+    color: #4682B4;
+    border-bottom: 5px solid #4682B4;
 
 }
 
 .main-nav__item--cta a {
-    color:blue;
+    color:#4682B4;
     padding: 8px 16px;
     border-radius: 8px;
-    border: 1px solid blue;
+    border: 1px solid #4682B4;
 }
 
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active {
     color: white;
-    background: blue;
-    border: none;
+    background: #4682B4;
+    border: 1px solid #4682B4;
 }
 
 .background-image {
+    background: url("https://corridor8.co.uk/wp-content/uploads/2018/04/DSC1552-25cm_preview.jpeg");
     height: 495px;
     background-color: #f6f5f1;
     background-repeat: no-repeat;
@@ -76,6 +83,7 @@
 }
 
 .text-container{
+    font-family: 'Comfortaa', cursive;
     flex-basis: 470px;
     background-color: white;
     margin: auto;
