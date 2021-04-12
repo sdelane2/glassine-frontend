@@ -7,7 +7,7 @@ const Login = props => {
         
             <div class="login-panel">
                 <h1>glassine</h1>
-                <button id="sign-up"> Sign Up</button>
+                <a href='/signup-form'><button id="sign-up"> Sign Up</button></a>
                 <a href='/login-form'><button id="log-in">Log in</button></a>
             </div>
         
