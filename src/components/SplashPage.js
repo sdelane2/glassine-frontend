@@ -5,7 +5,7 @@ const hello = () => (
         <div class="text-container">
             <h1> Help when you need it</h1>
             <p>Get help from our professional and trusted art handlers</p>
-            <input></input>
+            <input placeholder="I need help with..."></input>
         </div>
     </div>
 );

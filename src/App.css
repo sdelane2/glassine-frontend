@@ -8,6 +8,7 @@
 .main-header {
     width: 100%;
     padding: 8px 16px;
+    border-bottom: solid 1px gray;
 }
 
 .main-header > div {
@@ -73,7 +74,7 @@
 }
 
 .background-image {
-    background: url("https://corridor8.co.uk/wp-content/uploads/2018/04/DSC1552-25cm_preview.jpeg");
+    background: url(./cropped.jpg);
     height: 495px;
     background-color: #f6f5f1;
     background-repeat: no-repeat;
@@ -84,7 +85,7 @@
 
 .text-container{
     font-family: 'Comfortaa', cursive;
-    flex-basis: 470px;
+    flex-basis: 480px;
     background-color: white;
     margin: auto;
     text-align: center;
