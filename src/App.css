@@ -94,7 +94,13 @@
     border-radius: 4px;
 }
 
+.login-page {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .login-panel {
+    background: white;
     font-family: 'Comfortaa', cursive;
     color: #4682B4;
     text-align: center;
@@ -147,6 +153,20 @@ a {
     font-weight: normal;
     cursor: pointer;
 }
+
+.signup-form {
+    font-family: 'Comfortaa', cursive;
+    margin: 20px auto;
+    width: 53%;
+    max-width: 320px;
+    display: block;
+    padding: 0.5em 1.38em 0.5em;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
 
 #log-in:hover{
     background-color: darkgray;
