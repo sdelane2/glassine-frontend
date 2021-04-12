@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import {useRoutes} from 'hookrouter';
 import './App.css';
-import SplashPage from './components/SplashPage.js'
-import NavBar from './components/navbar/NavBar.js'
+import Routes from './components/router/routes.js';
+
+
 
 function App() {
-
+  const routeResult = useRoutes(Routes)
 
 
   return (
-    <BrowserRouter>
+    
     <div>
-      {NavBar()}
-      {SplashPage()}
+      {routeResult}
     </div>
-    </BrowserRouter>
+    
   );
 }
 
