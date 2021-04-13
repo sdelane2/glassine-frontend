@@ -133,7 +133,7 @@
 }
 
 #sign-up:hover{
-    background-color: #00008B;
+    background-color: #386890;
 }
 
 a {
@@ -195,6 +195,11 @@ a {
     flex-shrink: 0;
     margin-left: 0.5rem;
     cursor: pointer;
+}
+
+.get-help:hover{
+    background-color: #386890;
+
 }
 
 .search-input {
