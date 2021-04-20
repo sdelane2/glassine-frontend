@@ -1,4 +1,8 @@
 import react, {useState, useEffect} from 'react'
+import Cookies from "universal-cookie"
+
+
+
 
 const SignupForm = (props) => {
 
@@ -10,17 +14,28 @@ const SignupForm = (props) => {
         password: password
     }
 
+    console.log(userSignUpData)
+
+    const getToken = () => {
+        const cookies = new Cookies()
+        return cookies.get("token");
+    }
+
     const submitHandler = (event) => {
         event.preventDefault();
         fetch("http://localhost:3000/api/signup", {
-            method: "POST", 
+            'method': 'POST',
             headers: {
-                'Content-Type': 'application/json'
+            'Authorization' : getToken(),
+            'Accept': 'application/json',
+            'content-type': 'application/json'
             },
             body: JSON.stringify(userSignUpData)
         })
-        .then(r => r.json())
+        .then(response => response.json())
         .then(data => {
+            console.log(data.status)
+            console.log(data.headers)
             console.log(data)
         })
     }
