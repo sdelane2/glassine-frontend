@@ -218,3 +218,29 @@ a {
     cursor: text;
 }
 
+.category-button {
+    font-family: 'Comfortaa', cursive;
+    color: #4682B4;
+    display: inline-block;
+    font-size: 0.875rem;
+    border: 1px solid #4682B4;
+    background-color: white;
+    margin-top: 10px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.category-button:hover,
+.category-button:active {
+    color: white;
+    background: #4682B4;
+    border: 1px solid #4682B4;
+}

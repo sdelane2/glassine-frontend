@@ -1,26 +1,51 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from './navbar/NavBar.js'
 import {Icon} from 'semantic-ui-react'
+import CategorySearchBox from './CategorySearchBox.js';
 
 
-const hello = () => (
-    <div class="background-image">
-        <div class="text-container">
-            <h1> Help when you need it</h1>
-            <p>Get help from our professional and trusted art handlers</p>
-            <input class="search-input" placeholder="I need help with..."></input> <button class="get-help">Get help today</button>
-        </div>
-    </div>
-);
+
+
+
+
 
 
 function SplashPage(){
+
+    const [categories, setCategories] = useState([])
+
+
+
+    useEffect(() => {
+        fetch('http://localhost:3000/categories', {
+            method: "GET",
+            Accepts: "application/json",
+        })
+        .then(r => r.json())
+        .then(data => {
+            console.log(data)
+            const loadedCategories = [];
+            for(const key in data){
+                loadedCategories.push({
+                    name: data[key].name,
+                    id: key
+                })
+            }
+            setCategories(loadedCategories);
+        })
+
+    },[])
+
+
     
     
     return (
         <div>
             {NavBar()}
-            {hello()}
+            
+            <CategorySearchBox 
+            categories={categories}/>
+            
         </div>
     )  
 }
