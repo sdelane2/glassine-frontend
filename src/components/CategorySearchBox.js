@@ -1,8 +1,13 @@
 import React, { useEffect, useState } from 'react'
+import {A, setLinkProps} from 'hookrouter'
+import HandlerContainer from './HandlerContainer.js'
 
 const CategorySearchBox = props => {
 
-    console.log(props)
+    
+
+    
+
 
     return (
 
@@ -12,7 +17,7 @@ const CategorySearchBox = props => {
                     <p>Get help from our professional and trusted art handlers</p>
                     <input class="search-input" placeholder="I need help with..."></input> <button class="get-help">Get help today</button>
                     {props.categories.map(category => (
-                        <button class="category-button">{category.name}</button>
+                        <A href="/handlers" id={category.id}><button class="category-button">{category.name}</button></A>
                     ))}
                 </div>
             </div>
