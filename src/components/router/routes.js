@@ -12,6 +12,6 @@ const routes = {
   "/login": () => <Login />,
   "/login-form": () => <LoginForm />,
   "/signup-form": () => <SignupForm />,
-  "/handlers": () => <HandlerContainer />
+  "/handlers": () => <HandlerContainer id={id}/>
 };
 export default routes;
